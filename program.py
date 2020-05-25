@@ -3,15 +3,15 @@
 import sys
 
 def main():
-    print "Gob's Program:  Y/N?"
-    user_input = raw_input("?")
+    print("Gob's Program:  Y/N?")
+    user_input = input("?")
     if user_input.lower() == 'y':
         while True:
             sys.stdout.write('Penus ')
     elif user_input.lower() == 'n':
         exit()
     else:
-        print chr(27) + "[2J"
+        print(chr(27) + "[2J")
         main()
 
 if __name__ == '__main__':
